@@ -880,7 +880,7 @@ let mx=0,my=0,rx=0,ry=0;
 window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform=`translate(${mx}px,${my}px) translate(-50%,-50%)`});
 function loop(){rx+=(mx-rx)*.18;ry+=(my-ry)*.18;ring.style.transform=`translate(${rx}px,${ry}px) translate(-50%,-50%)`;requestAnimationFrame(loop)}
 loop();
-document.querySelectorAll('a,button,.proj-card,.chip,.contact-card,.profile-card').forEach(el=>{
+document.querySelectorAll('a,button,.proj-card,.ach-card,.chip,.contact-card,.profile-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>ring.classList.add('hover'));
   el.addEventListener('mouseleave',()=>ring.classList.remove('hover'));
 });
