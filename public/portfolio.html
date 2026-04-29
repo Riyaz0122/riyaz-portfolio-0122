@@ -592,16 +592,22 @@ footer span{color:var(--pink)}
 <!-- Navbar -->
 <nav>
   <div class="logo">Riyaz Shaik</div>
-  <button class="menu-toggle" id="menuToggle">☰</button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Leadership</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#achievements">Awards</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div style="display:flex;align-items:center;gap:6px">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Leadership</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+      <span class="icon sun">☀️</span>
+      <span class="icon moon">🌙</span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
 </nav>
 
 <!-- HERO -->
