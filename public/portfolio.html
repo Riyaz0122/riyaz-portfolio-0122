@@ -33,13 +33,32 @@ img{max-width:100%;display:block}
   --amber:#f59e0b;
   --ink:#1a1530;
   --muted:#6b6890;
+  --bg-base:#fafbff;
   --glass:rgba(255,255,255,0.55);
   --glass-strong:rgba(255,255,255,0.75);
   --border:rgba(255,255,255,0.6);
   --shadow-sm:0 4px 20px rgba(79,70,229,0.08);
   --shadow-md:0 10px 40px rgba(79,70,229,0.12);
   --shadow-lg:0 20px 60px rgba(236,72,153,0.15);
+  --bg-grad:radial-gradient(ellipse at 10% 0%, #cffafe 0%, transparent 45%),radial-gradient(ellipse at 90% 20%, #fce7f3 0%, transparent 45%),radial-gradient(ellipse at 50% 80%, #e0e7ff 0%, transparent 50%),linear-gradient(135deg,#ffffff 0%,#f5f3ff 100%);
 }
+html.dark{
+  --indigo:#818cf8;
+  --pink:#f472b6;
+  --cyan:#22d3ee;
+  --amber:#fbbf24;
+  --ink:#f1f0ff;
+  --muted:#a5a3c4;
+  --bg-base:#0a0818;
+  --glass:rgba(30,25,60,0.55);
+  --glass-strong:rgba(30,25,60,0.78);
+  --border:rgba(255,255,255,0.08);
+  --shadow-sm:0 4px 20px rgba(0,0,0,0.35);
+  --shadow-md:0 10px 40px rgba(0,0,0,0.45);
+  --shadow-lg:0 20px 60px rgba(236,72,153,0.25);
+  --bg-grad:radial-gradient(ellipse at 10% 0%, #1e1b4b 0%, transparent 50%),radial-gradient(ellipse at 90% 20%, #4a1d4a 0%, transparent 50%),radial-gradient(ellipse at 50% 80%, #0c1f3d 0%, transparent 55%),linear-gradient(135deg,#0a0818 0%,#120a2a 100%);
+}
+body{transition:background-color .4s ease,color .4s ease}
 
 /* ============ BACKGROUND ============ */
 .bg-gradient{
